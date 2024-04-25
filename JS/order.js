@@ -105,7 +105,7 @@ function regularExpressionChecker(e){
     regex.lastIndex=0;
     if(regex.test(e.key)){
         e.preventDefault();
-        alert(`Invalid keypress "${e.key}" detected.`)
+        alert(`Invalid keypress ${e.key} detected.`)
     }
 }
 
