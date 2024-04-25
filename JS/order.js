@@ -105,7 +105,7 @@ function regularExpressionChecker(e){
     regex.lastIndex=0;
     if(regex.test(e.key)){
         e.preventDefault();
-        alert("Invalid keypress detected.")
+        alert(`Invalid keypress "${e.key}" detected.`)
     }
 }
 
@@ -158,7 +158,7 @@ function totalCostCalculate(){
 document.querySelector('button[type="submit"]').addEventListener('click', function(e) {
     //Prevent user from submitting if they don't order anything.
     if (totalCostCalculate() === 0) {
-        alert("You hadn't ordered anything, please order something!");
+        alert("To prevent flooding the server with empty requests, all orders must include at least one item.");
         e.preventDefault();
     } 
     //Otherwise, give confirmation if the user ordered something.
