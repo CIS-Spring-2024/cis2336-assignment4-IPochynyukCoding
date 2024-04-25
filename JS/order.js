@@ -11,12 +11,10 @@ let roshenCounterInput = document.getElementById("roshenCounter");
 let zhivchikCounterInput = document.getElementById("zhivchikCounter");
 let flintCounterInput = document.getElementById("flintCounter");
 let crazyBeeCounterInput = document.getElementById("crazyBeeCounter");
+//Port total field using same method as above
 let subTotalText = document.getElementById("subTotal");
 let taxText = document.getElementById("taxCost");
 let totalCostText = document.getElementById("totalCost");
-//Get regex for not allowing people to use "e",".","+", and "-"
-let regex = /[e.+-]/gi;
-//Port total field using same method as above
 let borschCostTotal = document.getElementById("borschTotal");
 let varenykyCostTotal = document.getElementById("varenykyTotal");
 let saloCostTotal = document.getElementById("saloTotal");
@@ -25,6 +23,9 @@ let roshenCostTotal = document.getElementById("roshenTotal");
 let zhivchikCostTotal = document.getElementById("zhivchikTotal");
 let flintCostTotal = document.getElementById("flintTotal");
 let crazyBeeCostTotal = document.getElementById("crazyBeeTotal");
+//Get regex for not allowing people to use "e",".","+", and "-"
+let regex = /[e.+-]/gi;
+
 
 
 //Arrays for more efficient calculations
