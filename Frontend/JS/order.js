@@ -1,4 +1,4 @@
-/*Credits to MelkorNemesis for making the regular expression checker on lines 103-108
+/*Credits to MelkorNemesis for making the regular expression checker on lines 104-111
 Link to his blog article: https://melkornemesis.medium.com/prevent-unwanted-characters-in-input-f2967132decb */
 
 
