@@ -105,8 +105,8 @@ crazyBeeCounterInput.addEventListener("keypress",regularExpressionChecker);
 function regularExpressionChecker(e){
     regex.lastIndex=0;
     if(regex.test(e.key)){
+        alert(`Invalid keypress '${e.key}'.`)
         e.preventDefault();
-        alert(`Invalid keypress ${e.key} detected.`)
     }
 }
 
