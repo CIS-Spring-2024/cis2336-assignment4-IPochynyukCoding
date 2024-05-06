@@ -156,6 +156,7 @@ function totalCostCalculate(){
     return totalCost;
 }
 
+
 document.querySelector('button[type="submit"]').addEventListener('click', function(e) {
     //Prevent user from submitting if they don't order anything.
     if (totalCostCalculate() === 0) {
